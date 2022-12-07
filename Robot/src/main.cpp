@@ -10,6 +10,7 @@ void setup() {
     pinMode(pinoTrig, OUTPUT);
     pinMode(pinoEcho, INPUT);
     Serial.begin(9600);
+    delay(400);
     HCSR04 sensor(10,9);
   // put your setup code here, to run once:
 }
