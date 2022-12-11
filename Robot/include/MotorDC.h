@@ -18,5 +18,6 @@ class MotorDC{
         int pinoEncoder;
         int direcao;
         long unsigned int contadorEncoder;
+        
 };
 #endif
