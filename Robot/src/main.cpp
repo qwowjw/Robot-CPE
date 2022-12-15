@@ -4,6 +4,7 @@
 
 const int pinoTrig = 10;
 const int pinoEcho =9;
+
 /*
 Estamos declarando esses pinos apenas para não precisarmos ficar lembrando qual pino está conectada
 em qual porta do arduino. 
@@ -28,9 +29,9 @@ void setup() {
 }
 
 HCSR04 sensor(10,9);
-void loop() {
+void loop(){
     
-    Serial.print(sensor.dist());
+    Serial.print("FILHA DA PUTA");
   // put your main code here, to run repeatedly:
   
 }
