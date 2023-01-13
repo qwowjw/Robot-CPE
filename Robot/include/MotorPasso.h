@@ -6,10 +6,6 @@ class MotorPasso{
 
         ~MotorPasso();
 
-        void subir();
-
-        void descer();
-
         void fechar();
 
         void abrir();
