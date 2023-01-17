@@ -1,23 +1,21 @@
 #ifndef MOTORDC_H
 #define MOTORDC_H
 class MotorDC{
-    public:
-        MotorDC(int pinoA,int pinoB,int pinoPwn, int pinEncoder, int pinoEnable);
-        ~MotorDC();
+public:
+    MotorDC(int pinoA,int pinoB,int pinoPwn);
+    ~MotorDC();
 
-        void andar_para_frente();
+    void andar_para_frente(int *velocidade);
 
-        void andar_para_tras();
+    void andar_para_tras(int *velocidade);
 
-        void parar();
+    void parar();
 
-    private:
-        int pinoA;
-        int pinoB;
-        int pinoPwn;
-        int pinoEncoder;
-        int direcao;
-        long unsigned int contadorEncoder;
-        
+private:
+    int pinoA;
+    int pinoB;
+    int pinoPwn;  //de 0 a 250
+
+    int velocidade;
 };
 #endif

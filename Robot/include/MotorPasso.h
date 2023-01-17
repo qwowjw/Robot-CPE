@@ -1,19 +1,14 @@
 #ifndef MOTORPASSO_H
 #define MOTORPASSO_H
 class MotorPasso{
-    public:
-        MotorPasso();
+public:
+    MotorPasso();
 
-        ~MotorPasso();
+    ~MotorPasso();
 
-        void subir();
+    void fechar();
 
-        void descer();
-
-        void fechar();
-
-        void abrir();
+    void abrir();
 };
-
 
 #endif
