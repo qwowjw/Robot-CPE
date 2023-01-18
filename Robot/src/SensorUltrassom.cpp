@@ -59,8 +59,10 @@ float SensorUltrassom::distancia_filtro(){
 }
 */
 float SensorUltrassom::distancia(){
+	digitalWrite(this->trigger, LOW);
+	delayMicroseconds(2);
 	digitalWrite(this->trigger, HIGH);
-	delayMicroseconds(5);
+	delayMicroseconds(10);
 	digitalWrite(this->trigger, LOW);
 	float tempoEcho = pulseIn(this->echo, HIGH);
 	this->dist = tempoEcho/58.8235;

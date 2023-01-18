@@ -13,7 +13,4 @@ void setup(){
 }
 void loop(){
     Serial.println(sensorUltrassom.distancia()); // return curent distance in serial  
-    delay(200);
-    //Serial.println(sensorUltrassom.distancia());   
-    
 }
