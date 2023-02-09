@@ -3,11 +3,10 @@
 class MotorDC{
     public:
         MotorDC(int pinoA,int pinoB,int pinoPwn);
-        ~MotorDC();
 
-        void andar_para_frente(int *velocidade);
+        void andar_para_frente(int velocidade);
 
-        void andar_para_tras(int *velocidade);
+        void andar_para_tras(int velocidade);
 
         void parar();
 

@@ -21,6 +21,7 @@ void setup()
 
 void loop()
 {
+/*
 //Gira o Motor A no sentido horario
     digitalWrite(IN1, HIGH);
     digitalWrite(IN1, Power);
@@ -52,6 +53,35 @@ void loop()
     digitalWrite(IN4, HIGH);
     delay(2000);
 //Para o motor B
+    digitalWrite(IN3, HIGH);
+    digitalWrite(IN4, HIGH);
+    delay(500);
+*/
+//girar os 2 juntos no sentido horario (anda pra frente)
+    digitalWrite(IN1, HIGH);
+    //digitalWrite(IN1, Power);
+    digitalWrite(IN2, LOW);
+    digitalWrite(IN3, HIGH);
+    digitalWrite(IN4, LOW);
+    delay(2000);
+
+// para o robo
+    digitalWrite(IN1, HIGH);
+    digitalWrite(IN2, HIGH);
+    digitalWrite(IN3, HIGH);
+    digitalWrite(IN4, HIGH);
+    delay(500);
+
+// girar os 2 juntos antihorario (anda pra trás)
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, HIGH);
+    digitalWrite(IN3, LOW);
+    digitalWrite(IN4, HIGH);
+    delay(2000);
+
+// para o carro e repete o loop
+    digitalWrite(IN1, LOW);
+    digitalWrite(IN2, HIGH);
     digitalWrite(IN3, HIGH);
     digitalWrite(IN4, HIGH);
     delay(500);

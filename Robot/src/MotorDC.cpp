@@ -7,17 +7,17 @@ MotorDC::MotorDC(int pinoA,int pinoB,int pinoPwn){
     this->pinoPwn = pinoPwn;
 }
 
-void MotorDC:: andar_para_frente(int* velocidade){
+void MotorDC:: andar_para_frente(int velocidade){
     digitalWrite(this->pinoA,HIGH);
     digitalWrite(this->pinoB, LOW);
-    analogWrite(this->pinoPwn,*velocidade);
+    analogWrite(this->pinoPwn,velocidade);
     
 }
 
-void MotorDC::andar_para_tras(int* velocidade){
+void MotorDC::andar_para_tras(int velocidade){
     digitalWrite(this->pinoA, LOW);
     digitalWrite(this->pinoB, HIGH);
-    analogWrite(this->pinoPwn, *velocidade);
+    analogWrite(this->pinoPwn, velocidade);
 
 }
 
