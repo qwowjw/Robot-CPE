@@ -1,12 +1,12 @@
 #include<Arduino.h>
 #include<Wire.h>
 
-#define PWM1 A0
-#define IN1 7
-#define IN2 8
-#define PWM2 
-#define IN3 9
-#define IN4 10
+#define PWM1 12
+#define IN1 52
+#define IN2 53
+#define PWM2 13
+#define IN3 22
+#define IN4 23
 
 void setup(){
     

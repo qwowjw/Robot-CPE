@@ -2,7 +2,7 @@
 #define MOTORDC_H
 class MotorDC{
     public:
-        MotorDC(int pinoA,int pinoB,int pinoPwn);
+        MotorDC(int pinoA,int pinoB,int pinoPwm);
 
         void andar_para_frente(int velocidade);
 
@@ -13,7 +13,7 @@ class MotorDC{
     private:
         int pinoA;
         int pinoB;
-        int pinoPwn;  //de 0 a 250
+        int pinoPwm;  //de 0 a 250
 
         int velocidade;
 };
