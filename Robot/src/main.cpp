@@ -1,33 +1,27 @@
 
 #include<Arduino.h>
 #include<Wire.h>
-
-const int pinIRd = 8;
-#define pinIRa A0
-const int pinLED = 9;
-int IRvalueA = 0;
-int IRvalueD = 0;
+#define A0  8
+#define D0 9
 
 void setup()
 {
   
-  pinMode(pinIRd,INPUT);
-  pinMode(pinIRa,INPUT);
-  pinMode(pinLED,OUTPUT);
+  pinMode(A0,INPUT);
+  pinMode(D0,INPUT);
   Serial.begin(9600);
 
 }
-
+  int analog;
+  bool digital;
 void loop()
 {
-  Serial.print("Analog Reading=");
-  Serial.print(IRvalueA);
-  Serial.print("\t Digital Reading=");
-  Serial.println(IRvalueD);
-  delay(1000);
-  
-  IRvalueA = analogRead(pinIRa);
-  IRvalueD = digitalRead(pinIRd);
+  analog =analogRead(A0);
+  digital =digitalRead(D0);
+  Serial.print("Pino analógico: "+ analog);
+  Serial.println("Pino digital: "+digital);
+
+
 }
 
 

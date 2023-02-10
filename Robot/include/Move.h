@@ -1,7 +1,7 @@
 #ifndef MOVE_H
 #define MOVE_H
 #include <MotorDC.h>
-#include <arduino.h>
+#include <Arduino.h>
 #include <Wire.h>
 
 class Move{
